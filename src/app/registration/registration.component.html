@@ -1,0 +1,96 @@
+
+<h1 class="text-center">Registration form</h1>
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="form-bg col-lg-8 mt-4 bg-primary">
+       
+       
+        <form [formGroup]="login" (ngSubmit)="data()">
+        
+        
+          
+        
+            
+          <div class="form-group">
+            <label class="font-weight-bolder">Firstname</label>      
+            <input type="text" class="form-control" placeholder="firstname"  formControlName="firstname"   autocomplete="off" > 
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('firstname').untouched || login.get('firstname').valid">plz enter firstname</span>
+            <!-- <div *ngIf="login.get('firstname').invalid && login.get('firstname').touched">
+              <span *ngIf="login.get('firstname').errors.required" class="text-danger">please enter the firstname</span>
+              <span *ngIf="login.get('firstname').errors.minlength" class="text-danger">username length must be 4 characters</span>
+          </div> -->
+          </div>
+            
+          
+          
+          <div class="form-group">
+            <label class="font-weight-bolder">Lastname</label>
+            <input type="text" class="form-control" placeholder="lastname"  formControlName="lastname"  autocomplete="off">
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('lastname').untouched || login.get('lastname').valid">plz enter lastname</span>
+ 
+          </div>
+          <div class="form-group">
+            <label class="font-weight-bolder">Email</label>
+            <input type="text" class="form-control"    placeholder="email"   formControlName="email" autocomplete="off">
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('email').untouched || login.get('email').valid">plz enter email</span>
+ 
+          </div>
+          <div class="form-group">
+            <label class="font-weight-bolder">Password</label> 
+          <input type="password" class="form-control"  placeholder="password" formControlName="password">
+           <span class="btn btn-danger" [hidden]="login.get('password').untouched || login.get('password').valid">password can't be empty</span>
+      
+            
+          </div>
+          <div class="form-group">
+            <label class="font-weight-bolder">Adsress</label>
+            <input type="text" class="form-control"    placeholder="address"   formControlName="address" autocomplete="off">
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('address').untouched || login.get('address').valid">plz enter address</span>
+
+          </div>
+
+          <div class="form-row">
+            <div class="col">
+              <label class="font-weight-bolder" >Gender</label>
+              <select class="form-control " formControlName="Gender" >
+              
+                <option >Male</option>
+                <option >female</option>
+                
+              </select>
+              <span  class="text-dark font-weight-bolder" [hidden]="login.get('Gender').untouched || login.get('Gender').valid">plz enter gender</span>
+
+          </div>
+       
+          <!-- <div class="col">
+            <label class="font-weight-bolder">Country</label>
+            <input  type="text" class="form-control"  placeholder="country" formControlName="country">
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('country').untouched || login.get('country').valid">plz enter country</span>
+          </div>
+          <div class="col">
+            <label class="font-weight-bolder">State</label>
+            <input  type="text" class="form-control"  placeholder="state" formControlName="state">
+            <span  class="text-dark font-weight-bolder" [hidden]="login.get('state').untouched || login.get('state').valid">plz enter state</span>
+          </div> -->
+
+
+          </div>
+          
+          
+          <br>
+          <div class="align-center">
+           <button type="submit"  class="btn btn-success"  [disabled]='!login.valid'>Register</button>&nbsp;
+
+
+            
+            
+          </div>`
+        </form>
+        
+  
+  
+      </div>
+  
+    </div>
+  </div>

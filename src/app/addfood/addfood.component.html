@@ -1,0 +1,42 @@
+<app-header></app-header>    
+ <h1 class="text-center">ADDFOOD</h1>
+    <div class="container ">
+        <div class="row d-flex justify-content-center">
+          <div class="form-bg col-lg-8 mt-4 bg-red">
+           
+            
+        
+            <form  [formGroup]="addfood"     (ngSubmit)="data()">
+            
+          
+              
+              
+                
+              <div class="form-group">
+                <label class="font-weight-bolder">foodName </label>
+                <input type="text" class="form-control"    placeholder="foodName"   formControlName="food" autocomplete="off">
+                <span  class="text-dark font-weight-bolder" [hidden]="addfood.get('food').untouched || addfood.get('food').valid">plz enter foodname</span>
+     
+              </div>
+              <div class="form-group">
+                <label class="font-weight-bolder">Price</label> 
+              <input type="text" class="form-control"  placeholder="price" formControlName="price">
+               <span class="btn btn-danger" [hidden]="addfood.get('price').untouched || addfood.get('price').valid">price can't be empty </span>
+          
+                
+              </div>
+            
+             
+              <div class="align-center">
+               <button type="submit" class="btn btn-danger"  [disabled]="!addfood.valid">ADDFOOD</button>
+                
+               
+              </div>
+            </form>
+      
+      
+          </div>
+      
+        </div>
+      </div>
+    

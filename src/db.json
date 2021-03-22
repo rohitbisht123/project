@@ -1,0 +1,76 @@
+{
+  "student": [
+    {
+      "firstname": "rohit",
+      "lastname": "bisht",
+      "email": "rohit@123",
+      "address": "laldath",
+      "Gender": "Male",
+      "id": 1
+    },
+    {
+      "firstname": "munni",
+      "lastname": "bisht",
+      "email": "munni@123",
+      "password": "qwerty",
+      "address": "laldath",
+      "Gender": "female",
+      "id": 2
+    },
+    {
+      "firstname": "chandu",
+      "lastname": "mehta",
+      "email": "chandu@123",
+      "password": "qwerty",
+      "address": "laldath",
+      "Gender": "Male",
+      "id": 3
+    },
+    {
+      "firstname": "rinku ",
+      "lastname": "bisht",
+      "email": "rohit@123",
+      "password": "qwerty",
+      "address": "laldath",
+      "Gender": "Male",
+      "id": 4
+    }
+  ],
+  "foods": [
+    {
+      "food": "momo",
+      "price": "10",
+      "id": 1
+    },
+    {
+      "food": "soup",
+      "price": "10",
+      "id": 2
+    },
+    {
+      "food": "milk",
+      "price": "1",
+      "id": 3
+    },
+    {
+      "food": "dahi",
+      "price": "2",
+      "id": 4
+    },
+    {
+      "food": "rice",
+      "price": "free",
+      "id": 5
+    },
+    {
+      "food": "thuppa",
+      "price": "50",
+      "id": 6
+    },
+    {
+      "food": "milk",
+      "price": "1",
+      "id": 7
+    }
+  ]
+}
